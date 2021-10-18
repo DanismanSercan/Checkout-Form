@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+    <title>Checkout Form</title>
+</head>
+
+<body>
+    <h1>Checkout</h1>
+    <div class="container-global">
+        <div class="container-contact">
+            <div class="contact-main">
+                <h3>Contact information</h3>
+                <label for="email">Email</label> <br>
+                <div class="input-box">
+                    <i class=" fas fa-envelope"></i>
+                    <input type="email" id="email" name="email" placeholder='Enter your E-mail...'>
+                </div>
+                <label for="phone">Phone</label> <br>
+                <div class="input-box">
+                    <i class="fas fa-phone"></i>
+                    <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"
+                        placeholder="Enter your phone.. ">
+                </div>
+            </div>
+            <div class="adress-main">
+                <h3>Shipping Adress</h3>
+                <label for="name">Full Name</label> <br>
+                <div class="input-box">
+                    <i class=" fas fa-user"></i>
+                    <input type="text" id="name" name="name" placeholder='Enter your Full name...'>
+                </div>
+                <label for="adress">Adress</label> <br>
+                <div class="input-box">
+                    <i class=" fas fa-home"></i>
+                    <input type="text" id="adress" name="adress" placeholder='Enter your adress...'>
+                </div>
+                <label for="city">City</label> <br>
+                <div class="input-box">
+                    <i class=" fas fa-city"></i>
+                    <input type="text" id="city" name="city" placeholder='Enter your city...'>
+                </div>
+                <div class="country-post">
+                    <div class="country">
+                        <label for="country">Country </label> <br>
+                        <div class="input-box-1">
+                            <i class=" fas fa-globe-europe"></i>
+                            <select name="country" id="country">
+                                <option value="Turkey">Turkey</option>
+                                <option value="A.B.D">A.B.D</option>
+                                <option value="Fransa">Fransa</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="post">
+                        <label for="post">Post code</label> <br>
+                        <div class="input-box-2">
+                            <i class=" fas fa-mail-bulk"></i>
+                            <input type="text" id="post" name="post" placeholder='Enter your postal code...'>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <input type="checkbox" id="check">
+                    <span>See this information next time</span>
+                </div>
+                
+            </div>
+        </div>
+
+
+        <div class="container-image">
+            <div class="vintage">
+                <img src="./images/photo1.png" alt="" id="img-vintega">
+                <div id="vintega-bag">
+                    <h5>Vintage Backbag</h5>
+                    <p> <span>$54.99</span> <del style="font-size: smaller;">$94.99</del> </p>
+                    <div class="counter"><i class="fas fa-minus icon"
+                            style="background-color: rgb(185, 184, 184); border-radius: 2px;"></i>1<i
+                            class="fas fa-plus icon"
+                            style="background-color: rgb(185, 184, 184); border-radius: 2px;"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="levi-shoes">
+                <img src="./images/photo2.png" alt="" id="img-vintega">
+                <div id="levi">
+                    <h5>Levi Shoes</h5>
+                    <p> <span>$74.99</span> <del style="font-size: smaller;">$124.99</del> </p>
+                    <div class="counter"><i class="fas fa-minus icon"
+                            style="background-color: rgb(185, 184, 184); border-radius: 2px;"></i>1<i
+                            class="fas fa-plus icon"
+                            style="background-color: rgb(185, 184, 184); border-radius: 2px;"></i>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="shipping">
+                <span>Shipping</span>
+                <span>19$</span>
+            </div>
+            <hr>
+            <div class="total">
+                <span>Total</span>
+                <span>148.98$</span>
+            </div>
+        </div>
+        
+    </div>
+    <div id="button">
+        <button>Continue</button>
+    </div> 
+</body>
+
+</html>
